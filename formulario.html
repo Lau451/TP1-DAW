@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripcion</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="stylesf.css" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+        <h1>La Prensa</h1>
+        <div>
+          <a href="formulario.html">Suscribite para mantenerte al tanto</a>
+        </div>
+        <p>Miercoles 17 de mayo del 2023</p>
+      </div>
+    </header>
+    <main>
+      <h1>¡Suscríbete a nuestro boletín!</h1>
+      <form action="">
+        <p>
+          Ingresa tus datos para recibir nuestras últimas noticias y
+          promociones:
+        </p>
+        <div>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" name="nombre" id="nombre" required />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" name="contraseña" id="contraseña" required />
+        </div>
+
+        <div>
+          <label for="Confircontraseña">Confirmar contraseña:</label>
+          <input
+            type="password"
+            name="Confircontraseña"
+            id="Confircontraseña"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" required />
+        </div>
+        <div>
+          <label for="telefono">Telefono:</label>
+          <input type="number" name="telefono" id="telefono" required />
+        </div>
+        <div>
+          <label for="direccion">Direccion:</label>
+          <input type="text" name="direccion" id="direccion" required />
+        </div>
+        <div>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad" required />
+        </div>
+        <div>
+          <label for="CodPostal">Codigo postal:</label>
+          <input type="text" name="CodPostal" id="CodPostal" required />
+        </div>
+        <div>
+          <label for="dni">Documento:</label>
+          <input type="number" name="dni" id="dni" required />
+        </div>
+        <div>
+          <input type="submit" value="Suscribirse" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 La Prensa. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
