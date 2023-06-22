@@ -12,70 +12,217 @@
     <header>
       <div class="cabecera">
         <h1>La Prensa</h1>
-        <div>
-          <a href="formulario.html">Suscribite para mantenerte al tanto</a>
-        </div>
         <p>Miercoles 17 de mayo del 2023</p>
       </div>
     </header>
     <main>
       <h1>¡Suscríbete a nuestro boletín!</h1>
-      <form action="">
-        <p>
-          Ingresa tus datos para recibir nuestras últimas noticias y
-          promociones:
-        </p>
-        <div>
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" name="nombre" id="nombre" required />
+      <form action="" class="formulario" id="formulario">
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre Completo</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="text"
+              class="formulario__input"
+              name="nombre"
+              id="nombre"
+              placeholder="Laureano Maidana"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            El nombre tiene que tener por lo menos 6 letras y un espacio entre
+            medio.
+          </p>
         </div>
 
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required />
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__email">
+          <label for="email" class="formulario__label">Email</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="email"
+              class="formulario__input"
+              name="email"
+              id="correo"
+              placeholder="email@email.com"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            El correo solo puede contener letras, numeros, puntos, guiones y
+            guion bajo.
+          </p>
         </div>
 
-        <div>
-          <label for="contraseña">Contraseña:</label>
-          <input type="password" name="contraseña" id="contraseña" required />
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__contraseña">
+          <label for="contraseña" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="password"
+              class="formulario__input"
+              name="contraseña"
+              id="contraseña"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            La contraseña debe tener al menos 8 caracteres, formados por letras
+            y números.
+          </p>
         </div>
 
-        <div>
-          <label for="Confircontraseña">Confirmar contraseña:</label>
-          <input
-            type="password"
-            name="Confircontraseña"
-            id="Confircontraseña"
-            required
-          />
+        <!-- Grupo: Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__contraseña2">
+          <label for="contraseña2" class="formulario__label"
+            >Repetir Contraseña</label
+          >
+          <div class="formulario__grupo-input">
+            <input
+              type="password"
+              class="formulario__input"
+              name="contraseña2"
+              id="contraseña2"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            Ambas contraseñas deben ser iguales.
+          </p>
+        </div>
+        <!-- Grupo: Edad -->
+        <div class="formulario__grupo" id="grupo__edad">
+          <label for="edad" class="formulario__label">Edad</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="number"
+              class="formulario__input"
+              name="edad"
+              id="edad"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            La edad debe ser un número entero mayor o igual a 18.
+          </p>
         </div>
 
-        <div>
-          <label for="edad">Edad:</label>
-          <input type="number" name="edad" id="edad" required />
+        <!-- Grupo: Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono" class="formulario__label">Teléfono</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="text"
+              class="formulario__input"
+              name="telefono"
+              id="telefono"
+              placeholder="3413576818"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            El telefono debe contener al menos 7 dígitos, no se aceptan
+            espacios, guiones ni paréntesis.
+          </p>
         </div>
-        <div>
-          <label for="telefono">Telefono:</label>
-          <input type="number" name="telefono" id="telefono" required />
+
+        <!-- Grupo: Direccción -->
+        <div class="formulario__grupo" id="grupo__direccion">
+          <label for="direccion" class="formulario__label">Dirección</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="text"
+              class="formulario__input"
+              name="direccion"
+              id="direccion"
+              placeholder="Lamadrid 1053"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            La dirección debe contener al menos 5 caracteres, con letras,
+            números y un espacio en el medio.
+          </p>
         </div>
-        <div>
-          <label for="direccion">Direccion:</label>
-          <input type="text" name="direccion" id="direccion" required />
+
+        <!-- Grupo: Ciudad -->
+        <div class="formulario__grupo" id="grupo__ciudad">
+          <label for="ciudad" class="formulario__label">Ciudad</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="text"
+              class="formulario__input"
+              name="ciudad"
+              id="ciudad"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            La ciudad debe contener al menos 3 caracteres.
+          </p>
         </div>
-        <div>
-          <label for="ciudad">Ciudad:</label>
-          <input type="text" name="ciudad" id="ciudad" required />
+
+        <!-- Grupo: Codigo Postal-->
+        <div class="formulario__grupo" id="grupo__codPostal">
+          <label for="codPostal" class="formulario__label">Código Postal</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="text"
+              class="formulario__input"
+              name="codPostal"
+              id="codPostal"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            El código postal debe contener al menos 3 caracteres.
+          </p>
         </div>
-        <div>
-          <label for="CodPostal">Codigo postal:</label>
-          <input type="text" name="CodPostal" id="CodPostal" required />
+
+        <!-- Grupo: DNI-->
+        <div class="formulario__grupo" id="grupo__dni">
+          <label for="dni" class="formulario__label">Documento</label>
+          <div class="formulario__grupo-input">
+            <input
+              type="number"
+              class="formulario__input"
+              name="dni"
+              id="dni"
+            />
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">
+            El dni debe contener 7 u 8 dígitos.
+          </p>
         </div>
-        <div>
-          <label for="dni">Documento:</label>
-          <input type="number" name="dni" id="dni" required />
+
+        <!-- Grupo: Terminos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+          <label class="formulario__label">
+            <input
+              class="formulario__checkbox"
+              type="checkbox"
+              name="terminos"
+              id="terminos"
+            />
+            Acepto los Terminos y Condiciones
+          </label>
         </div>
-        <div>
-          <input type="submit" value="Suscribirse" />
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p>
+            <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
+            rellena el formulario correctamente.
+          </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+            Formulario enviado exitosamente!
+          </p>
         </div>
       </form>
     </main>
@@ -83,5 +230,9 @@
       <p>&copy; 2023 La Prensa. Todos los derechos reservados.</p>
     </footer>
     <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
